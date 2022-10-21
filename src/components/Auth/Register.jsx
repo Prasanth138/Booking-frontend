@@ -165,7 +165,7 @@ const Register = () => {
                 }
               ]}
             >
-              <Input.Password placeholder={isLogin ? "Try (12345)" : "Password"} />
+              <Input.Password placeholder={isLogin ? "Try (Admin@123)" : "Password"} />
             </Form.Item>
             {!isLogin && (
               <Form.Item

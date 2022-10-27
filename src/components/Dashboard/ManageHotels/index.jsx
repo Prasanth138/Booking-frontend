@@ -97,7 +97,7 @@ const ManageHotels = () => {
                 >
                   Delete
                 </button>
-                <button className="btn-secondary">Update</button>
+                {/* <button className="btn-secondary">Update</button> */}
               </Space>
             </Card>
           </Col>

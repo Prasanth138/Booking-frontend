@@ -63,10 +63,15 @@ const AddRoomHotelModal = ({
   useEffect(() => {
     const getPost = async () => {
       try {
-        const { data } = await getData(GET_HOTELS, {
-          city: city
-        });
-        setHotels(data.hotels.allHotels);
+        const { data } = await axios.post(`${process.env.REACT_APP_API_URL}/api/hotels`,{city: city}).then((response) => {
+          setHotels(response.data.hotels.allHotels);
+          console.log(process.env.REACT_APP_API_URL);
+        })
+      // try {
+      //   const { data } = await getData(GET_HOTELS, {
+      //     city: city
+      //   });
+      //   setHotels(data.hotels.allHotels);
       } catch (err) {
         console.log(err);
       }
@@ -77,6 +82,7 @@ const AddRoomHotelModal = ({
   // GET_CITY
   const handleCHangeCIty = (value) => {
     setCity(value);
+    console.log(setCity);
   };
 
   const handleCHangeHotelName = (value) => {

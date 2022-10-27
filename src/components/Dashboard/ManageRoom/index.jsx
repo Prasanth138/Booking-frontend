@@ -85,10 +85,10 @@ const ManageRoom = () => {
               />
               <h4>{title}</h4>
               <p>Price: ${price}</p>
-              <Space>
-                <button className="btn-primary-full">Delete</button>
-                <button className="btn-secondary">Update</button>
-              </Space>
+             {/* <Space>
+                 <button className="btn-primary-full">Delete</button>
+                <button className="btn-secondary">Update</button> 
+              </Space>*/}
             </Card>
           </Col>
         ))}

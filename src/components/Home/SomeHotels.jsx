@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 // import { getData, postData} from "../../Api/commonServices";
 import  axios  from 'axios';
 import  gofLoader  from "../../assets/project-idea.gif";
-const URI= "https://hotelbooking-mern.herokuapp.com";
+const URI= "https://booking-backend-chi.vercel.app";
 const { Option } = Select;
 const SomeHotels = () => {
   const [hotels, setHotels] = useState([]);
